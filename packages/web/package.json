@@ -6,6 +6,7 @@
     "dev": "yarn && yarn concurrently yarn:watch-*",
     "watch-next": "next dev",
     "watch-gql": "gql-gen --watch",
+    "export": "next export",
     "build": "next build",
     "start": "next start",
     "gql-gen": "graphql-codegen --config codegen.yml"

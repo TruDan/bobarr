@@ -23,6 +23,14 @@ services:
     ports:
       - 4000:4000
 
+  nginx:
+    container_name: bobarr-nginx
+    env_file: .env
+    image: trudan/bobarr-nginx:latest
+    restart: unless-stopped
+    ports:
+      - 80:80
+
   web:
     container_name: bobarr-web
     env_file: .env
