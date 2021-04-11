@@ -9,4 +9,9 @@ COPY package*.json yarn.lock ./
 RUN yarn --network-timeout 1000000
 COPY . .
 
-RUN yarn start
+RUN yarn build
+
+HEALTHCHECK --start-period=30s \
+  CMD curl -f http://localhost:3000 || exit 1
+
+CMD yarn start
