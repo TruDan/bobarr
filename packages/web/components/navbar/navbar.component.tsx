@@ -13,6 +13,10 @@ const links = [
   ['Discover', '/discover'],
   ['Suggestions', '/suggestions'],
   ['Calendar', '/calendar'],
+  ['Jackett', '/jackett'],
+  ['Transmission', '/transmission'],
+  ['Jobs', '/api/jobs'],
+  ['FlareSolverr', '/flaresolverr'],
   ['Settings', '/settings'],
 ];
 
